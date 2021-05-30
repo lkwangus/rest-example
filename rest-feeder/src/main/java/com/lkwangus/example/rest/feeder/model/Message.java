@@ -1,9 +1,6 @@
-package com.lkwangus.example.rest.receiver.dto;
+package com.lkwangus.example.rest.feeder.model;
 
 import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,5 +14,4 @@ public class Message {
   Integer id;
   String messageContent;
   Date createdOn;
-
 }

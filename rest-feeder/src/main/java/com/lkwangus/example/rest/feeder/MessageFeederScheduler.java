@@ -1,6 +1,6 @@
 package com.lkwangus.example.rest.feeder;
 
-import com.lkwangus.example.rest.feeder.dto.Message;
+import com.lkwangus.example.rest.feeder.model.Message;
 import com.lkwangus.example.rest.feeder.service.MessageService;
 import java.text.SimpleDateFormat;
 import java.util.Date;
