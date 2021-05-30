@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class MessageService {
 
-  RestTemplate restTemplate = new RestTemplate();
+  final RestTemplate restTemplate = new RestTemplate();
   @Value("${app.message.token}")
   String systemToken;
 
