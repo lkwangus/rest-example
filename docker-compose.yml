@@ -1,0 +1,21 @@
+version: "3.5"
+services:
+  message-receiver:
+    image: rest-project:latest
+    build:
+      context: message-receiver
+      dockerfile: rest-receiver/Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - example-network
+  message-feeder:
+    image: rest-project:latest
+    build:
+      context: message-feeder
+      dockerfile: rest-receiver/Dockerfile
+    networks:
+      - example-network
+networks:
+  example-network:
+    driver: bridge
